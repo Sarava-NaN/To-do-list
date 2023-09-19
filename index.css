@@ -108,3 +108,49 @@ ul li span {
 ul li span:hover {
   background-color: #cbcccf;
 }
+
+@media screen and (max-width: 400px) {
+  .todo-app {
+    padding: 10px;
+  }
+  .todo-app h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #153677;
+  }
+  .todo-app img {
+    width: 30px;
+  }
+  .inputBtn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    background: #d1d2d2;
+    border-radius: 30px;
+    padding-left: 0px;
+    margin-bottom: 25px;
+  }
+  input {
+    flex: 2;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: orangered;
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+  ::placeholder {
+  }
+  button {
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: orangered;
+    color: wheat;
+    cursor: pointer;
+    padding: 10px 30px;
+  }
+}
