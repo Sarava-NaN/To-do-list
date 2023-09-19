@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Pacifico&family=Poppins:wght@800&family=Roboto+Serif:ital,opsz@1,8..144&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  background: linear-gradient(135deg, #153677, #4e085f);
+}
+.todo-app {
+  margin: 100px auto 20px;
+  padding: 40px;
+  background: #fff;
+  max-width: 540px;
+  width: 100%;
+  border-radius: 10px;
+}
+.todo-app h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.todo-app img {
+  width: 40px;
+}
+.inputBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  background: #d1d2d2;
+  border-radius: 30px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: orangered;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+::placeholder {
+}
+button {
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  background: orangered;
+  color: wheat;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+ul li {
+  list-style-type: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  text-transform: capitalize;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(./image/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(./image/checked.png);
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover {
+  background-color: #cbcccf;
+}
